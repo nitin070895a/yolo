@@ -156,13 +156,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fh-J7-Xr2">
-                                                <rect key="frame" x="20" y="300" width="112" height="21"/>
+                                                <rect key="frame" x="20" y="375" width="112" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6La-iM-MNE">
-                                                <rect key="frame" x="20" y="341" width="343" height="100"/>
+                                                <rect key="frame" x="20" y="416" width="343" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="MlX-em-96L"/>
@@ -185,13 +185,13 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Routes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pP-b8-9Mv">
-                                                <rect key="frame" x="20" y="461" width="125" height="21"/>
+                                                <rect key="frame" x="20" y="536" width="125" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-mJ-uS5">
-                                                <rect key="frame" x="20" y="502" width="343" height="100"/>
+                                                <rect key="frame" x="20" y="577" width="343" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="LW6-0k-8mg"/>
@@ -213,12 +213,21 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-Wp-t5E">
+                                                <rect key="frame" x="20" y="295" width="343" height="60"/>
+                                                <color key="backgroundColor" red="0.069797344509999998" green="0.82628852129999997" blue="0.41336020829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="tk2-dt-Q18"/>
+                                                </constraints>
+                                                <state key="normal" title="GO"/>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="zRS-0T-Bk9" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="11K-0Y-7dn"/>
                                             <constraint firstItem="7pP-b8-9Mv" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="1zO-T9-1ix"/>
+                                            <constraint firstAttribute="trailing" secondItem="s5f-Wp-t5E" secondAttribute="trailing" constant="20" symbolic="YES" id="75c-c7-SiQ"/>
                                             <constraint firstItem="HRe-Nz-BxK" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="BAr-3n-gYG"/>
-                                            <constraint firstItem="0Fh-J7-Xr2" firstAttribute="top" secondItem="HRe-Nz-BxK" secondAttribute="bottom" constant="20" id="CyL-Ks-F0F"/>
+                                            <constraint firstItem="0Fh-J7-Xr2" firstAttribute="top" secondItem="s5f-Wp-t5E" secondAttribute="bottom" constant="20" id="CyL-Ks-F0F"/>
                                             <constraint firstItem="0Fh-J7-Xr2" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="IQh-LU-U2Q"/>
                                             <constraint firstItem="6La-iM-MNE" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="IsM-mR-r5d"/>
                                             <constraint firstItem="zRS-0T-Bk9" firstAttribute="centerX" secondItem="D0l-Jv-D4W" secondAttribute="centerX" id="QFB-g4-ioR"/>
@@ -229,7 +238,9 @@
                                             <constraint firstItem="HRe-Nz-BxK" firstAttribute="top" secondItem="zRS-0T-Bk9" secondAttribute="bottom" constant="20" id="btv-uf-cFk"/>
                                             <constraint firstItem="hhM-mJ-uS5" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" id="cWp-1N-dB2"/>
                                             <constraint firstItem="zRS-0T-Bk9" firstAttribute="top" secondItem="D0l-Jv-D4W" secondAttribute="top" constant="20" id="rlv-ne-SgQ"/>
+                                            <constraint firstItem="s5f-Wp-t5E" firstAttribute="top" secondItem="HRe-Nz-BxK" secondAttribute="bottom" constant="15" id="srp-vQ-mm0"/>
                                             <constraint firstItem="6La-iM-MNE" firstAttribute="top" secondItem="0Fh-J7-Xr2" secondAttribute="bottom" constant="20" id="usP-Yu-Jwm"/>
+                                            <constraint firstItem="s5f-Wp-t5E" firstAttribute="leading" secondItem="D0l-Jv-D4W" secondAttribute="leading" constant="20" symbolic="YES" id="vgc-bH-gnw"/>
                                             <constraint firstAttribute="trailing" secondItem="6La-iM-MNE" secondAttribute="trailing" constant="20" id="xjB-Dm-tm0"/>
                                         </constraints>
                                     </view>
@@ -257,6 +268,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Yolo Bus" id="m3m-Dn-ypN"/>
+                    <connections>
+                        <outlet property="switchButton" destination="D1d-Vy-V3C" id="H8G-wC-6Vw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
