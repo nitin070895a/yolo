@@ -46,3 +46,10 @@ extension UIButton {
         setTitleColor(UIColor(hexString: color), for: UIControl.State.focused)
     }
 }
+
+extension Date {
+    
+    func formatToYoloDefault() -> String {
+        return TimeAndDateUtils.convertDate(date: self, to: "EEE, dd MMM")
+    }
+}

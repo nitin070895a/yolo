@@ -11,6 +11,7 @@
 		94413E6F2426A7140077F965 /* TripCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6E2426A7140077F965 /* TripCollectionCell.swift */; };
 		94413E7124274C3F0077F965 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E7024274C3F0077F965 /* Trip.swift */; };
 		94413E74242751D90077F965 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E73242751D90077F965 /* CardView.swift */; };
+		94413E7D242759990077F965 /* TimeAndDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E7C242759990077F965 /* TimeAndDateUtils.swift */; };
 		948E6798242535E8008D34EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6797242535E8008D34EB /* AppDelegate.swift */; };
 		948E679A242535E8008D34EB /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6799242535E8008D34EB /* HomeScreenVC.swift */; };
 		948E679D242535E8008D34EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E679B242535E8008D34EB /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		94413E6E2426A7140077F965 /* TripCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionCell.swift; sourceTree = "<group>"; };
 		94413E7024274C3F0077F965 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		94413E73242751D90077F965 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		94413E7C242759990077F965 /* TimeAndDateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAndDateUtils.swift; sourceTree = "<group>"; };
 		948E6794242535E8008D34EB /* Yolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E6797242535E8008D34EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948E6799242535E8008D34EB /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				94413E6C24268CBE0077F965 /* Extensions.swift */,
+				94413E7C242759990077F965 /* TimeAndDateUtils.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94413E7124274C3F0077F965 /* Trip.swift in Sources */,
+				94413E7D242759990077F965 /* TimeAndDateUtils.swift in Sources */,
 				948E679A242535E8008D34EB /* HomeScreenVC.swift in Sources */,
 				94413E6D24268CBE0077F965 /* Extensions.swift in Sources */,
 				94413E6F2426A7140077F965 /* TripCollectionCell.swift in Sources */,

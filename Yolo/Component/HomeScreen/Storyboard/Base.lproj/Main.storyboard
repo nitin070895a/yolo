@@ -124,6 +124,9 @@
                                                         <state key="normal" title="Today">
                                                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="todayClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zeb-X2-rjV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hi-o6-ryR">
                                                         <rect key="frame" x="297" y="25" width="69" height="30"/>
@@ -131,6 +134,9 @@
                                                         <state key="normal" title="Tomorrow">
                                                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tomorrowClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="em8-Oj-K2k"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHe-rn-Boc">
                                                         <rect key="frame" x="281" y="26.666666666666686" width="8" height="27"/>
@@ -366,6 +372,7 @@
                     <navigationItem key="navigationItem" title="Yolo Bus" id="m3m-Dn-ypN"/>
                     <connections>
                         <outlet property="availableTripsCollectionView" destination="hhM-mJ-uS5" id="Xhv-a5-k7b"/>
+                        <outlet property="currentDate" destination="dfH-pj-eqZ" id="lK1-j2-aj7"/>
                         <outlet property="recentTripsCollectionView" destination="6La-iM-MNE" id="uOj-0G-Our"/>
                         <outlet property="switchButton" destination="D1d-Vy-V3C" id="H8G-wC-6Vw"/>
                         <outlet property="today" destination="dYe-Xk-MH2" id="U1s-FZ-r9w"/>

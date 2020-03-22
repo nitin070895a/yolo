@@ -13,6 +13,7 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     @IBOutlet weak var switchButton: UIButton!
     @IBOutlet weak var today: UIButton!
     @IBOutlet weak var tomorrow: UIButton!
+    @IBOutlet weak var currentDate: UILabel!
     
     @IBOutlet weak var recentTripsCollectionView: UICollectionView!
     @IBOutlet weak var availableTripsCollectionView: UICollectionView!
@@ -33,6 +34,16 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         tomorrow.setSelectedColor(color: "#12D369")
         
         apiStub()
+        
+        today.sendActions(for: .touchUpInside)
+    }
+    
+    @IBAction func todayClicked(_ sender: Any) {
+        currentDate.text = TimeAndDateUtils.today().formatToYoloDefault()
+    }
+    
+    @IBAction func tomorrowClicked(_ sender: Any) {
+        currentDate.text = TimeAndDateUtils.tomorrow().formatToYoloDefault()
     }
     
     // Acts as an api source
