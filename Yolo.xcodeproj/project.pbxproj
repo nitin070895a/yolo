@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		94413E6D24268CBE0077F965 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6C24268CBE0077F965 /* Extensions.swift */; };
-		94413E6F2426A7140077F965 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6E2426A7140077F965 /* CollectionViewCell.swift */; };
+		94413E6F2426A7140077F965 /* TripCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6E2426A7140077F965 /* TripCollectionCell.swift */; };
 		94413E7124274C3F0077F965 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E7024274C3F0077F965 /* Trip.swift */; };
 		94413E74242751D90077F965 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E73242751D90077F965 /* CardView.swift */; };
 		948E6798242535E8008D34EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6797242535E8008D34EB /* AppDelegate.swift */; };
-		948E679A242535E8008D34EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6799242535E8008D34EB /* ViewController.swift */; };
+		948E679A242535E8008D34EB /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6799242535E8008D34EB /* HomeScreenVC.swift */; };
 		948E679D242535E8008D34EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E679B242535E8008D34EB /* Main.storyboard */; };
 		948E679F242535E9008D34EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948E679E242535E9008D34EB /* Assets.xcassets */; };
 		948E67A2242535E9008D34EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E67A0242535E9008D34EB /* LaunchScreen.storyboard */; };
@@ -20,12 +20,12 @@
 
 /* Begin PBXFileReference section */
 		94413E6C24268CBE0077F965 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		94413E6E2426A7140077F965 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		94413E6E2426A7140077F965 /* TripCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionCell.swift; sourceTree = "<group>"; };
 		94413E7024274C3F0077F965 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		94413E73242751D90077F965 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		948E6794242535E8008D34EB /* Yolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E6797242535E8008D34EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		948E6799242535E8008D34EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		948E6799242535E8008D34EB /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		948E679C242535E8008D34EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		948E679E242535E9008D34EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948E67A1242535E9008D34EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,12 +43,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		94413E72242751BF0077F965 /* views */ = {
+		94413E72242751BF0077F965 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				948E6799242535E8008D34EB /* HomeScreenVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		94413E75242752AD0077F965 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				94413E73242751D90077F965 /* CardView.swift */,
 			);
-			path = views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		94413E76242752DF0077F965 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				948E67A0242535E9008D34EB /* LaunchScreen.storyboard */,
+				948E679B242535E8008D34EB /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		94413E77242752EE0077F965 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				94413E76242752DF0077F965 /* Storyboard */,
+				94413E7A242753150077F965 /* Model */,
+				94413E79242753040077F965 /* CollectionCell */,
+				94413E72242751BF0077F965 /* ViewController */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		94413E78242752F70077F965 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				94413E77242752EE0077F965 /* HomeScreen */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		94413E79242753040077F965 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				94413E6E2426A7140077F965 /* TripCollectionCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		94413E7A242753150077F965 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94413E7024274C3F0077F965 /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94413E7B2427531F0077F965 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				94413E6C24268CBE0077F965 /* Extensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		948E678B242535E8008D34EB = {
@@ -70,16 +130,12 @@
 		948E6796242535E8008D34EB /* Yolo */ = {
 			isa = PBXGroup;
 			children = (
-				94413E72242751BF0077F965 /* views */,
+				94413E78242752F70077F965 /* Component */,
+				94413E7B2427531F0077F965 /* Helper */,
+				94413E75242752AD0077F965 /* View */,
 				948E6797242535E8008D34EB /* AppDelegate.swift */,
-				948E6799242535E8008D34EB /* ViewController.swift */,
-				948E679B242535E8008D34EB /* Main.storyboard */,
 				948E679E242535E9008D34EB /* Assets.xcassets */,
-				948E67A0242535E9008D34EB /* LaunchScreen.storyboard */,
 				948E67A3242535E9008D34EB /* Info.plist */,
-				94413E6C24268CBE0077F965 /* Extensions.swift */,
-				94413E6E2426A7140077F965 /* CollectionViewCell.swift */,
-				94413E7024274C3F0077F965 /* Trip.swift */,
 			);
 			path = Yolo;
 			sourceTree = "<group>";
@@ -156,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94413E7124274C3F0077F965 /* Trip.swift in Sources */,
-				948E679A242535E8008D34EB /* ViewController.swift in Sources */,
+				948E679A242535E8008D34EB /* HomeScreenVC.swift in Sources */,
 				94413E6D24268CBE0077F965 /* Extensions.swift in Sources */,
-				94413E6F2426A7140077F965 /* CollectionViewCell.swift in Sources */,
+				94413E6F2426A7140077F965 /* TripCollectionCell.swift in Sources */,
 				94413E74242751D90077F965 /* CardView.swift in Sources */,
 				948E6798242535E8008D34EB /* AppDelegate.swift in Sources */,
 			);

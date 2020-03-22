@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class TripCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var from: UILabel!
     @IBOutlet weak var to: UILabel!
