@@ -50,6 +50,6 @@ extension UIButton {
 extension Date {
     
     func formatToYoloDefault() -> String {
-        return TimeAndDateUtils.convertDate(date: self, to: "EEE, dd MMM")
+        return TimeAndDateUtils.convertDate(date: self, to: DATE_FORMAT_DEFAULT)
     }
 }

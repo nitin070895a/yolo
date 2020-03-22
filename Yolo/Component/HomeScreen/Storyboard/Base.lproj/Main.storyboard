@@ -229,6 +229,7 @@
                                                         </constraints>
                                                         <connections>
                                                             <outlet property="from" destination="gci-LJ-WyZ" id="EKy-qM-wie"/>
+                                                            <outlet property="image" destination="rkK-9W-uXy" id="tJd-oF-AWQ"/>
                                                             <outlet property="to" destination="DjN-2j-zNq" id="xKd-lC-Uu9"/>
                                                         </connections>
                                                     </collectionViewCell>
@@ -306,6 +307,7 @@
                                                         </constraints>
                                                         <connections>
                                                             <outlet property="from" destination="5df-pB-6MF" id="FJA-s2-8hN"/>
+                                                            <outlet property="image" destination="k2w-Ru-1QA" id="wRJ-sS-0OY"/>
                                                             <outlet property="to" destination="GIJ-yz-I8J" id="cFa-x4-YpL"/>
                                                         </connections>
                                                     </collectionViewCell>

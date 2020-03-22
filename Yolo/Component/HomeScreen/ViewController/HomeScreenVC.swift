@@ -30,8 +30,8 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         recentTripsCollectionView.backgroundColor = UIColor.clear
         availableTripsCollectionView.backgroundColor = UIColor.clear
         
-        today.setSelectedColor(color: "#12D369")
-        tomorrow.setSelectedColor(color: "#12D369")
+        today.setSelectedColor(color: THEME_COLOR)
+        tomorrow.setSelectedColor(color: THEME_COLOR)
         
         apiStub()
         
