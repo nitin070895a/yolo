@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yolo-->
+        <!--Yolo Bus-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeScreenVC" title="Yolo" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenVC" title="Yolo Bus" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,7 +358,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="dfo-iD-3jk"/>
-                    <navigationItem key="navigationItem" title="Yolo Bus" id="m3m-Dn-ypN"/>
                     <connections>
                         <outlet property="availableTripsCollectionView" destination="hhM-mJ-uS5" id="Xhv-a5-k7b"/>
                         <outlet property="currentDate" destination="dfH-pj-eqZ" id="lK1-j2-aj7"/>
@@ -392,7 +391,7 @@
         <scene sceneID="jNv-Pp-UGo">
             <objects>
                 <tabBarController title="Yolo Bus" id="RYx-XE-aG5" customClass="HomeTabVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ogn-5g-Bah"/>
+                    <navigationItem key="navigationItem" title="Yolo Bus" id="Ogn-5g-Bah"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HXm-xh-weQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -421,7 +420,7 @@
                         <color key="barTintColor" red="0.069797344509999998" green="0.82628852129999997" blue="0.41336020829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="RYx-XE-aG5" kind="relationship" relationship="rootViewController" id="ZC8-To-ocD"/>
+                        <segue destination="RYx-XE-aG5" kind="relationship" relationship="rootViewController" id="ybh-Cc-gia"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTz-a0-VO7" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -24,8 +24,9 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
+
+        self.parent?.title = "Yolo Bus"
+        
         switchButton.layer.cornerRadius = 20
         recentTripsCollectionView.backgroundColor = UIColor.clear
         availableTripsCollectionView.backgroundColor = UIColor.clear
@@ -40,10 +41,16 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     @IBAction func todayClicked(_ sender: Any) {
         currentDate.text = TimeAndDateUtils.today().formatToYoloDefault()
+        
+        today.setTitleColor(THEME_UI_COLOR, for: .normal)
+        tomorrow.setTitleColor(UIColor.gray, for: .normal)
     }
     
     @IBAction func tomorrowClicked(_ sender: Any) {
         currentDate.text = TimeAndDateUtils.tomorrow().formatToYoloDefault()
+        
+        tomorrow.setTitleColor(THEME_UI_COLOR, for: .normal)
+        today.setTitleColor(UIColor.gray, for: .normal)
     }
     
     // Acts as an api source

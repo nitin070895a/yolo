@@ -13,6 +13,7 @@ class HelpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.parent?.navigationItem.title = "Help"
     }
 
 }

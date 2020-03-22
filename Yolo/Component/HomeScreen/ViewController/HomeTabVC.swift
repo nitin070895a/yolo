@@ -11,7 +11,4 @@ import UIKit
 
 class HomeTabVC : UITabBarController {
     
-    override func viewDidLoad() {
-        
-    }
 }
