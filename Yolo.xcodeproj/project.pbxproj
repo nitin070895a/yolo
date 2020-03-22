@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94413E6D24268CBE0077F965 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6C24268CBE0077F965 /* Extensions.swift */; };
+		94413E6F2426A7140077F965 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E6E2426A7140077F965 /* CollectionViewCell.swift */; };
+		94413E7124274C3F0077F965 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E7024274C3F0077F965 /* Trip.swift */; };
+		94413E74242751D90077F965 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94413E73242751D90077F965 /* CardView.swift */; };
 		948E6798242535E8008D34EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6797242535E8008D34EB /* AppDelegate.swift */; };
 		948E679A242535E8008D34EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E6799242535E8008D34EB /* ViewController.swift */; };
 		948E679D242535E8008D34EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E679B242535E8008D34EB /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94413E6C24268CBE0077F965 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		94413E6E2426A7140077F965 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		94413E7024274C3F0077F965 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		94413E73242751D90077F965 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		948E6794242535E8008D34EB /* Yolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E6797242535E8008D34EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948E6799242535E8008D34EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94413E72242751BF0077F965 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				94413E73242751D90077F965 /* CardView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		948E678B242535E8008D34EB = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +70,16 @@
 		948E6796242535E8008D34EB /* Yolo */ = {
 			isa = PBXGroup;
 			children = (
+				94413E72242751BF0077F965 /* views */,
 				948E6797242535E8008D34EB /* AppDelegate.swift */,
 				948E6799242535E8008D34EB /* ViewController.swift */,
 				948E679B242535E8008D34EB /* Main.storyboard */,
 				948E679E242535E9008D34EB /* Assets.xcassets */,
 				948E67A0242535E9008D34EB /* LaunchScreen.storyboard */,
 				948E67A3242535E9008D34EB /* Info.plist */,
+				94413E6C24268CBE0077F965 /* Extensions.swift */,
+				94413E6E2426A7140077F965 /* CollectionViewCell.swift */,
+				94413E7024274C3F0077F965 /* Trip.swift */,
 			);
 			path = Yolo;
 			sourceTree = "<group>";
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94413E7124274C3F0077F965 /* Trip.swift in Sources */,
 				948E679A242535E8008D34EB /* ViewController.swift in Sources */,
+				94413E6D24268CBE0077F965 /* Extensions.swift in Sources */,
+				94413E6F2426A7140077F965 /* CollectionViewCell.swift in Sources */,
+				94413E74242751D90077F965 /* CardView.swift in Sources */,
 				948E6798242535E8008D34EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
