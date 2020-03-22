@@ -371,10 +371,10 @@
             </objects>
             <point key="canvasLocation" x="-1165" y="793"/>
         </scene>
-        <!--Trips-->
+        <!--Bookings-->
         <scene sceneID="jSr-QI-Znz">
             <objects>
-                <viewController title="Trips" id="Cc0-oJ-53D" sceneMemberID="viewController">
+                <viewController title="Bookings" id="Cc0-oJ-53D" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2vI-yf-sn1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,12 +386,51 @@
                                     <segment title="COMPLETE"/>
                                 </segments>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-iQ-TER" userLabel="ErrorWindow">
+                                <rect key="frame" x="82" y="348" width="250" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-Sw-kQf">
+                                        <rect key="frame" x="90" y="13" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="6Rq-0R-cNR"/>
+                                            <constraint firstAttribute="height" constant="70" id="BYW-03-0SE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQP-uT-wgM">
+                                        <rect key="frame" x="20" y="130.66666666666669" width="210" height="30"/>
+                                        <color key="backgroundColor" red="0.070588235289999995" green="0.82745098039999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Retry">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QCb-Sw-kQf" firstAttribute="centerX" secondItem="LV5-iQ-TER" secondAttribute="centerX" id="3Fs-tc-CdW"/>
+                                    <constraint firstItem="QQP-uT-wgM" firstAttribute="leading" secondItem="LV5-iQ-TER" secondAttribute="leading" constant="20" id="64w-Jq-rtT"/>
+                                    <constraint firstAttribute="width" constant="250" id="INF-0F-cjI"/>
+                                    <constraint firstAttribute="height" constant="200" id="luJ-C0-qps"/>
+                                    <constraint firstAttribute="trailing" secondItem="QQP-uT-wgM" secondAttribute="trailing" constant="20" id="qDn-Yj-FCu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login First!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxy-Yv-wM3">
+                                <rect key="frame" x="137" y="437.66666666666669" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.070588235294117646" green="0.57850843558282206" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LV5-iQ-TER" firstAttribute="centerX" secondItem="2vI-yf-sn1" secondAttribute="centerX" id="4lL-9y-9SB"/>
+                            <constraint firstItem="LV5-iQ-TER" firstAttribute="centerY" secondItem="2vI-yf-sn1" secondAttribute="centerY" id="5yV-dQ-9HX"/>
+                            <constraint firstItem="bxy-Yv-wM3" firstAttribute="centerX" secondItem="LV5-iQ-TER" secondAttribute="centerX" id="7rh-Tw-uHx"/>
                             <constraint firstItem="O6d-4F-acQ" firstAttribute="top" secondItem="10u-jt-suX" secondAttribute="top" constant="20" id="84T-aW-TK0"/>
                             <constraint firstItem="10u-jt-suX" firstAttribute="trailing" secondItem="O6d-4F-acQ" secondAttribute="trailing" constant="20" id="IGM-fd-V5P"/>
                             <constraint firstItem="O6d-4F-acQ" firstAttribute="leading" secondItem="10u-jt-suX" secondAttribute="leading" constant="20" id="Nnc-63-f5D"/>
+                            <constraint firstItem="bxy-Yv-wM3" firstAttribute="centerY" secondItem="LV5-iQ-TER" secondAttribute="centerY" id="aLF-OE-DRj"/>
+                            <constraint firstItem="QQP-uT-wgM" firstAttribute="top" secondItem="bxy-Yv-wM3" secondAttribute="bottom" constant="20" id="nkv-gm-JbT"/>
+                            <constraint firstItem="bxy-Yv-wM3" firstAttribute="top" secondItem="QCb-Sw-kQf" secondAttribute="bottom" constant="6.6666666666666856" id="x5o-12-vsq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="10u-jt-suX"/>
                     </view>
@@ -480,6 +519,7 @@
         <image name="calendar" width="30" height="30"/>
         <image name="chat" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
+        <image name="icon" width="400" height="400"/>
         <image name="location" width="30" height="30"/>
         <image name="trips" width="30" height="30"/>
     </resources>
