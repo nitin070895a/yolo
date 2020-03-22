@@ -161,7 +161,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6La-iM-MNE">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6La-iM-MNE">
                                                 <rect key="frame" x="20" y="416" width="374" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="MlX-em-96L"/>
@@ -180,35 +180,46 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="101"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-9W-uXy">
-                                                                    <rect key="frame" x="122" y="20.666666666666671" width="20" height="60"/>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USS-ca-K3k" customClass="CardView" customModule="Yolo" customModuleProvider="target">
+                                                                    <rect key="frame" x="-12" y="0.0" width="182" height="101"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-9W-uXy">
+                                                                            <rect key="frame" x="142" y="20.666666666666671" width="20" height="60"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="JMU-UL-3C3"/>
+                                                                                <constraint firstAttribute="width" constant="20" id="j0p-iW-BTL"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gci-LJ-WyZ">
+                                                                            <rect key="frame" x="28" y="19.333333333333332" width="35" height="17.999999999999996"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandigarh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-2j-zNq">
+                                                                            <rect key="frame" x="28" y="52.333333333333336" width="80" height="18.000000000000007"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="60" id="JMU-UL-3C3"/>
-                                                                        <constraint firstAttribute="width" constant="20" id="j0p-iW-BTL"/>
+                                                                        <constraint firstItem="DjN-2j-zNq" firstAttribute="leading" secondItem="USS-ca-K3k" secondAttribute="leadingMargin" constant="20" id="A29-jJ-nfz"/>
+                                                                        <constraint firstItem="DjN-2j-zNq" firstAttribute="top" secondItem="gci-LJ-WyZ" secondAttribute="bottom" constant="15" id="FeZ-uT-iI6"/>
+                                                                        <constraint firstAttribute="bottomMargin" secondItem="DjN-2j-zNq" secondAttribute="bottom" constant="22.666666666666671" id="Kk7-xU-0cS"/>
+                                                                        <constraint firstItem="gci-LJ-WyZ" firstAttribute="leading" secondItem="USS-ca-K3k" secondAttribute="leadingMargin" constant="20" id="k8h-aQ-vJy"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="rkK-9W-uXy" secondAttribute="trailing" constant="20" id="uqx-K7-L0x"/>
+                                                                        <constraint firstItem="rkK-9W-uXy" firstAttribute="centerY" secondItem="USS-ca-K3k" secondAttribute="centerY" id="z6v-y8-ckk"/>
                                                                     </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandigarh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-2j-zNq">
-                                                                    <rect key="frame" x="16" y="60" width="80" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gci-LJ-WyZ">
-                                                                    <rect key="frame" x="16" y="27" width="35" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                </view>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottomMargin" secondItem="DjN-2j-zNq" secondAttribute="bottom" constant="15" id="AE8-1d-1x4"/>
-                                                            <constraint firstItem="rkK-9W-uXy" firstAttribute="centerY" secondItem="rU7-lN-fAf" secondAttribute="centerY" id="AdJ-lU-6fB"/>
-                                                            <constraint firstItem="DjN-2j-zNq" firstAttribute="leading" secondItem="rU7-lN-fAf" secondAttribute="leadingMargin" constant="8" id="Php-m3-KUs"/>
-                                                            <constraint firstItem="gci-LJ-WyZ" firstAttribute="leading" secondItem="rU7-lN-fAf" secondAttribute="leadingMargin" constant="8" id="wPm-Z9-QeD"/>
-                                                            <constraint firstItem="DjN-2j-zNq" firstAttribute="top" secondItem="gci-LJ-WyZ" secondAttribute="bottom" constant="15" id="xn1-7W-Kqx"/>
-                                                            <constraint firstAttribute="trailing" secondItem="rkK-9W-uXy" secondAttribute="trailing" constant="8" id="zlt-4L-hYG"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="USS-ca-K3k" secondAttribute="trailing" constant="-28" id="GZ5-Rg-6tq"/>
+                                                            <constraint firstAttribute="bottom" secondItem="USS-ca-K3k" secondAttribute="bottom" id="MNl-2h-6N1"/>
+                                                            <constraint firstItem="USS-ca-K3k" firstAttribute="centerY" secondItem="rU7-lN-fAf" secondAttribute="centerY" id="ohK-Wx-dFR"/>
+                                                            <constraint firstItem="USS-ca-K3k" firstAttribute="leading" secondItem="rU7-lN-fAf" secondAttribute="leadingMargin" constant="-20" id="zzl-Hl-AhY"/>
                                                         </constraints>
                                                         <connections>
                                                             <outlet property="from" destination="gci-LJ-WyZ" id="EKy-qM-wie"/>
@@ -227,7 +238,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-mJ-uS5">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-mJ-uS5">
                                                 <rect key="frame" x="20" y="577" width="374" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="LW6-0k-8mg"/>
@@ -239,46 +250,57 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvailableTripCollectionCell" id="8Rm-dS-xTA" customClass="TripCollectionCell" customModule="Yolo" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvailableTripCollectionCell" id="vdB-Te-pJb" customClass="TripCollectionCell" customModule="Yolo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-1.6666666666666667" width="152" height="103"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="152" height="103"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-rM-srB">
-                                                                    <rect key="frame" x="124" y="21.666666666666671" width="20" height="60"/>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulr-Eg-xvu" customClass="CardView" customModule="Yolo" customModuleProvider="target">
+                                                                    <rect key="frame" x="-12" y="0.0" width="184" height="103"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="k2w-Ru-1QA">
+                                                                            <rect key="frame" x="144" y="21.666666666666671" width="20" height="60"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="20" id="8Q9-DO-pOX"/>
+                                                                                <constraint firstAttribute="height" constant="60" id="Nac-ZE-TTq"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5df-pB-6MF">
+                                                                            <rect key="frame" x="28" y="21.333333333333332" width="35" height="17.999999999999996"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandigarh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIJ-yz-I8J">
+                                                                            <rect key="frame" x="28" y="54.333333333333336" width="80" height="18.000000000000007"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="20" id="Byd-6j-0HH"/>
-                                                                        <constraint firstAttribute="height" constant="60" id="xMp-U3-nYb"/>
+                                                                        <constraint firstItem="GIJ-yz-I8J" firstAttribute="top" secondItem="5df-pB-6MF" secondAttribute="bottom" constant="15" id="OqF-k5-mC0"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="k2w-Ru-1QA" secondAttribute="trailing" constant="20" id="TmS-gR-Mnv"/>
+                                                                        <constraint firstItem="k2w-Ru-1QA" firstAttribute="centerY" secondItem="ulr-Eg-xvu" secondAttribute="centerY" id="hab-K1-Lub"/>
+                                                                        <constraint firstItem="5df-pB-6MF" firstAttribute="leading" secondItem="ulr-Eg-xvu" secondAttribute="leadingMargin" constant="20" id="k9t-gs-nXc"/>
+                                                                        <constraint firstItem="GIJ-yz-I8J" firstAttribute="leading" secondItem="ulr-Eg-xvu" secondAttribute="leadingMargin" constant="20" id="nwr-dK-kBt"/>
+                                                                        <constraint firstAttribute="bottomMargin" secondItem="GIJ-yz-I8J" secondAttribute="bottom" constant="22.666666666666671" id="pFu-4H-g41"/>
                                                                     </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandigarh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbt-5c-GGf">
-                                                                    <rect key="frame" x="16" y="62" width="80" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-yc-XmR">
-                                                                    <rect key="frame" x="16" y="29" width="35" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                </view>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="i3Y-rM-srB" secondAttribute="trailing" constant="8" id="3O3-nI-Afi"/>
-                                                            <constraint firstItem="i3Y-rM-srB" firstAttribute="centerY" secondItem="8Rm-dS-xTA" secondAttribute="centerY" id="5SJ-zZ-iJX"/>
-                                                            <constraint firstItem="jbt-5c-GGf" firstAttribute="top" secondItem="Gdx-yc-XmR" secondAttribute="bottom" constant="15" id="JkG-dP-DJf"/>
-                                                            <constraint firstItem="Gdx-yc-XmR" firstAttribute="leading" secondItem="8Rm-dS-xTA" secondAttribute="leadingMargin" constant="8" id="LKu-I8-Voj"/>
-                                                            <constraint firstAttribute="bottomMargin" secondItem="jbt-5c-GGf" secondAttribute="bottom" constant="15" id="QQX-W2-gQb"/>
-                                                            <constraint firstItem="jbt-5c-GGf" firstAttribute="leading" secondItem="8Rm-dS-xTA" secondAttribute="leadingMargin" constant="8" id="uBJ-MO-3V7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ulr-Eg-xvu" secondAttribute="bottom" id="0Eq-gm-80Z"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="ulr-Eg-xvu" secondAttribute="trailing" constant="-28" id="S3f-B2-Kcw"/>
+                                                            <constraint firstItem="ulr-Eg-xvu" firstAttribute="centerY" secondItem="vdB-Te-pJb" secondAttribute="centerY" id="d43-w2-Gzw"/>
+                                                            <constraint firstItem="ulr-Eg-xvu" firstAttribute="leading" secondItem="vdB-Te-pJb" secondAttribute="leadingMargin" constant="-20" id="n7Z-M3-Utd"/>
                                                         </constraints>
                                                         <connections>
-                                                            <outlet property="from" destination="Gdx-yc-XmR" id="pI3-ea-HXH"/>
-                                                            <outlet property="to" destination="jbt-5c-GGf" id="jZP-cD-ha9"/>
+                                                            <outlet property="from" destination="5df-pB-6MF" id="FJA-s2-8hN"/>
+                                                            <outlet property="to" destination="GIJ-yz-I8J" id="cFa-x4-YpL"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>

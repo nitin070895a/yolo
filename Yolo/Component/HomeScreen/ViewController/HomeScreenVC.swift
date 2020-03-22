@@ -26,6 +26,8 @@ class HomeScreenVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         // Do any additional setup after loading the view.
     
         switchButton.layer.cornerRadius = 20
+        recentTripsCollectionView.backgroundColor = UIColor.clear
+        availableTripsCollectionView.backgroundColor = UIColor.clear
         
         today.setSelectedColor(color: "#12D369")
         tomorrow.setSelectedColor(color: "#12D369")
