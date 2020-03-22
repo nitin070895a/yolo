@@ -10,10 +10,14 @@ import UIKit
 
 class AccountVC: UITableViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.parent?.navigationItem.title = "Account"
+        image.layer.cornerRadius = 50
+
     }
 
 }
