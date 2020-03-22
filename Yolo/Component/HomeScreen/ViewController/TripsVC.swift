@@ -13,7 +13,7 @@ class TripsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.parent?.navigationItem.title = "Trips"
+        self.parent?.navigationItem.title = "Bookings"
     }
 
 }

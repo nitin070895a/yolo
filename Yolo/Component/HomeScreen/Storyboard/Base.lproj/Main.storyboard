@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yolo Bus-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeScreenVC" title="Yolo Bus" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenVC" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,10 +371,10 @@
             </objects>
             <point key="canvasLocation" x="-1165" y="793"/>
         </scene>
-        <!--Bookings-->
+        <!--Trips-->
         <scene sceneID="jSr-QI-Znz">
             <objects>
-                <viewController title="Bookings" id="Cc0-oJ-53D" sceneMemberID="viewController">
+                <viewController id="Cc0-oJ-53D" customClass="TripsVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2vI-yf-sn1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -440,11 +440,11 @@
             </objects>
             <point key="canvasLocation" x="-433.33333333333337" y="792.85714285714278"/>
         </scene>
-        <!--Yolo Bus-->
+        <!--Home TabVC-->
         <scene sceneID="jNv-Pp-UGo">
             <objects>
-                <tabBarController title="Yolo Bus" id="RYx-XE-aG5" customClass="HomeTabVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Yolo Bus" id="Ogn-5g-Bah"/>
+                <tabBarController id="RYx-XE-aG5" customClass="HomeTabVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ogn-5g-Bah"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HXm-xh-weQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -483,7 +483,7 @@
         <!--Help-->
         <scene sceneID="k9F-C7-n4S">
             <objects>
-                <viewController title="Help" id="bIJ-OZ-Su9" sceneMemberID="viewController">
+                <viewController id="bIJ-OZ-Su9" customClass="HelpVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EJR-lC-AGa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -641,6 +641,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -661,7 +662,7 @@
         <!--Account-->
         <scene sceneID="n8w-XP-HUP">
             <objects>
-                <viewController title="Account" id="ddC-U0-urx" sceneMemberID="viewController">
+                <viewController id="ddC-U0-urx" customClass="AccountVC" customModule="Yolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Efa-LZ-5uu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
